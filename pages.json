@@ -1,0 +1,131 @@
+{
+	"pages": [ 
+		
+		{
+			"path" : "pages/index/index",
+			"style" : {
+				// #ifdef MP 
+				"navigationBarTitleText" : "Dloud商城",
+				//"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "5px",
+							"placeholder": "请输入关键字 如：短袖",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						}
+					}
+				}
+			}
+		},
+		{
+		    "path" : "pages/product/product",
+		    "style" : {
+		        "navigationBarTitleText" : "详情展示",
+		        "app-plus" : {
+		            "titleNView" : {
+		                "type" : "transparent"
+		            }
+		        }
+		    }
+		},{
+		    "path" : "pages/set/set",
+		    "style" : {
+		        "navigationBarTitleText" : "设置"
+		    }
+		},
+		 
+		{
+		    "path" : "pages/userinfo/userinfo",
+		    "style" : {
+		        "navigationBarTitleText" : "修改资料"
+		    }
+		},{
+		    "path" : "pages/cart/cart",
+		    "style" : {
+		        "navigationBarTitleText" : "购物车"
+		    }
+		},{
+            "path" : "pages/public/login",
+            "style" : {
+                "navigationBarTitleText" : "",
+                "navigationStyle" : "custom",
+                "app-plus" : {
+                    "titleNView" : false,
+					"animationType": "slide-in-bottom"
+                }
+            }
+        }, {
+            "path" : "pages/user/user",
+            "style" : {
+            	"navigationBarTitleText" : "我的",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"bounce": "none"
+					}
+				}
+            }
+        },{
+            "path" : "pages/detail/detail",
+            "style" : {
+                "navigationBarTitleText" : "",
+                "app-plus" : {
+                    "titleNView" : {
+                        "type" : "transparent"
+                    }
+                }
+            }
+        },{
+		    "path" : "pages/search/search",
+		    "style" : {
+		        "navigationBarTitleText" : "搜索页"
+		    }
+		}
+    ],
+	 "globalStyle" : {
+	    "navigationBarTextStyle" : "black",
+	    "navigationBarTitleText" : "uni-app",
+	    "navigationBarBackgroundColor" : "#FFFFFF",
+	    "backgroundColor" : "#ffffff"
+	},
+	"tabBar" : {
+	    "color" : "#C0C4CC",
+	    "selectedColor" : "#fa436a",
+	    "borderStyle" : "black",
+	    "backgroundColor" : "#ffffff",
+	    "list" : [
+	        {
+	            "pagePath" : "pages/index/index",
+	            "iconPath" : "static/tab-home.png",
+	            "selectedIconPath" : "static/tab-home-current.png",
+	            "text" : "首页",
+				//开启下拉刷新属性
+				"style": {
+							"navigationBarTitleText": "uni-app",
+							"enablePullDownRefresh": true
+						}
+	        },
+	        {
+	            "pagePath" : "pages/cart/cart",
+	            "iconPath" : "static/tab-cart.png",
+	            "selectedIconPath" : "static/tab-cart-current.png",
+	            "text" : "购物车"
+	        },
+			{
+			    "pagePath" : "pages/user/user",
+			    "iconPath" : "static/tab-my.png",
+			    "selectedIconPath" : "static/tab-my-current.png",
+			    "text" : "我的"
+			}
+	    ]
+	}
+}
